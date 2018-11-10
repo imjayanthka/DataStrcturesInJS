@@ -1,0 +1,22 @@
+var Stack = require("./Stack");
+
+const newStack = new Stack();
+newStack.push(1);
+console.log(newStack.peek());
+newStack.push(2);
+newStack.push(3);
+newStack.push(4);
+newStack.push(5);
+console.log("peek: " + newStack.peek());
+console.log("pop: " + newStack.pop());
+console.log("peek: " + newStack.peek());
+console.log("pop: " + newStack.pop());
+console.log("peek: " + newStack.peek());
+console.log("pop: " + newStack.pop());
+console.log("peek: " + newStack.peek());
+console.log("pop: " + newStack.pop());
+console.log("peek: " + newStack.peek());
+console.log("pop: " + newStack.pop());
+console.log("peek: " + newStack.peek());
+console.log("pop: " + newStack.pop());
+console.log("peek: " + newStack.peek());
