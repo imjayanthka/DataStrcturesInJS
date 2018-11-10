@@ -6,9 +6,11 @@ class Stack {
   }
 
   pop() {
-    if (this._count === 0) return null;
+    if (this._count === 0) return undefined;
     this._count = this._count - 1;
-    return this._storage[this._count];
+    const lastVal = this._storage[this._count];
+    delete this._storage[this._count];
+    return lastVal;
   }
 
   push(value) {
@@ -19,7 +21,7 @@ class Stack {
   peek() {
     return this._storage[this._count - 1]
       ? this._storage[this._count - 1]
-      : null;
+      : undefined;
   }
 }
 
